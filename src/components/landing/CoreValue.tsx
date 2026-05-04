@@ -107,27 +107,9 @@ export const CoreValue = () => {
         />
 
         <div className="grid md:grid-cols-3 gap-6">
-          {features.map((f, i) => {
-            const { ref, visible } = useReveal();
-            return (
-              <div
-                key={f.title}
-                ref={ref}
-                className={`group glass rounded-3xl p-7 hover:border-primary/30 hover:-translate-y-1 transition-all duration-500 ${visible ? "animate-fade-up" : "opacity-0"}`}
-                style={{ animationDelay: `${i * 120}ms` }}
-              >
-                <div
-                  className="w-12 h-12 rounded-2xl grid place-items-center mb-5 transition-shadow group-hover:shadow-[0_0_30px_hsl(var(--glow-primary)/0.5)]"
-                  style={{ background: `hsl(${f.accent} / 0.15)`, color: `hsl(${f.accent})` }}
-                >
-                  <f.icon className="w-5 h-5" />
-                </div>
-                <h3 className="font-display text-2xl font-semibold mb-2">{f.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-6">{f.desc}</p>
-                <div className="rounded-2xl bg-muted/30 p-3 border border-border/50">{f.preview}</div>
-              </div>
-            );
-          })}
+          {features.map((f, i) => (
+            <FeatureCard key={f.title} f={f} i={i} />
+          ))}
         </div>
       </div>
     </section>
