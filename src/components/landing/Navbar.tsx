@@ -19,12 +19,20 @@ export const Navbar = () => {
             <a href="#dashboard" className="hover:text-foreground transition-colors">Dashboard</a>
             <a href="#research" className="hover:text-foreground transition-colors">Research</a>
           </div>
-          <a
-            href="#cta"
-            className="text-sm font-medium px-4 py-2 rounded-full bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity"
-          >
-            Launch Demo
-          </a>
+          <div className="flex items-center gap-2">
+            <a
+              href="/login"
+              className="text-sm font-medium px-4 py-2 rounded-full glass-strong text-secondary border border-secondary/40 hover:bg-card/80 transition-colors"
+            >
+              Login
+            </a>
+            <a
+              href="/start"
+              className="text-sm font-medium px-4 py-2 rounded-full bg-gradient-primary text-primary-foreground hover:opacity-90 transition-opacity"
+            >
+              Start Analysis
+            </a>
+          </div>
         </nav>
       </div>
     </header>
