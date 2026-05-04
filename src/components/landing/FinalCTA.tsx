@@ -34,18 +34,18 @@ export const FinalCTA = () => {
           </p>
           <div className="mt-9 flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="#"
+              href="/start"
               className="group inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-gradient-primary text-primary-foreground font-medium glow-primary hover:glow-strong transition-all"
             >
-              Launch Demo
+              Start Analysis
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="#dashboard"
-              className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full glass-strong font-medium hover:bg-card/80 transition-colors"
+              href="/login"
+              className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full glass-strong font-medium hover:bg-card/80 transition-colors border border-secondary/40 text-secondary"
             >
               <LayoutDashboard className="w-4 h-4" />
-              Explore Dashboard
+              Login
             </a>
           </div>
         </div>
