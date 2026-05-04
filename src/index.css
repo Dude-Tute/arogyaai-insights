@@ -4,57 +4,60 @@
 
 @layer base {
   :root {
-    /* Dark theme by default - ArogyaAI */
-    --background: 230 35% 5%;
-    --foreground: 210 40% 98%;
+    /* Light theme - ArogyaAI */
+    --background: 240 30% 98%;
+    --foreground: 245 25% 15%;
 
-    --card: 230 30% 8%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 245 25% 15%;
 
-    --popover: 230 30% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 245 25% 15%;
 
-    --primary: 200 100% 60%;
-    --primary-foreground: 230 35% 5%;
+    /* #6143F4 */
+    --primary: 251 89% 61%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 265 85% 65%;
-    --secondary-foreground: 210 40% 98%;
+    /* #009CDE */
+    --secondary: 198 100% 44%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 230 20% 15%;
-    --muted-foreground: 215 20% 70%;
+    --muted: 240 20% 94%;
+    --muted-foreground: 245 6% 49%;
 
-    --accent: 180 100% 55%;
-    --accent-foreground: 230 35% 5%;
+    /* #AC4600 */
+    --accent: 24 100% 34%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 90% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 0 0% 100%;
 
-    --success: 142 76% 50%;
-    --warning: 38 95% 60%;
+    --success: 152 70% 40%;
+    --warning: 32 95% 50%;
 
-    --border: 230 25% 18%;
-    --input: 230 25% 15%;
-    --ring: 200 100% 60%;
+    --border: 245 20% 88%;
+    --input: 245 20% 90%;
+    --ring: 251 89% 61%;
 
     --radius: 1rem;
 
     /* Glow tokens */
-    --glow-primary: 200 100% 60%;
-    --glow-secondary: 265 85% 65%;
-    --glow-accent: 180 100% 55%;
+    --glow-primary: 251 89% 61%;
+    --glow-secondary: 198 100% 44%;
+    --glow-accent: 24 100% 34%;
 
     /* Gradients */
-    --gradient-hero: radial-gradient(ellipse at top, hsl(200 100% 60% / 0.15), transparent 60%), radial-gradient(ellipse at bottom right, hsl(265 85% 65% / 0.12), transparent 60%);
-    --gradient-primary: linear-gradient(135deg, hsl(200 100% 60%), hsl(180 100% 55%));
-    --gradient-secondary: linear-gradient(135deg, hsl(265 85% 65%), hsl(200 100% 60%));
-    --gradient-card: linear-gradient(135deg, hsl(230 30% 10% / 0.8), hsl(230 30% 6% / 0.4));
-    --gradient-text: linear-gradient(135deg, hsl(180 100% 70%), hsl(200 100% 70%), hsl(265 85% 75%));
-    --gradient-border: linear-gradient(135deg, hsl(200 100% 60% / 0.4), hsl(265 85% 65% / 0.4));
+    --gradient-hero: radial-gradient(ellipse at top, hsl(251 89% 61% / 0.18), transparent 60%), radial-gradient(ellipse at bottom right, hsl(198 100% 44% / 0.15), transparent 60%);
+    --gradient-primary: linear-gradient(135deg, hsl(251 89% 61%), hsl(198 100% 44%));
+    --gradient-secondary: linear-gradient(135deg, hsl(198 100% 44%), hsl(251 89% 61%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.9), hsl(240 30% 98% / 0.6));
+    --gradient-text: linear-gradient(135deg, hsl(251 89% 55%), hsl(220 90% 55%), hsl(198 100% 40%));
+    --gradient-border: linear-gradient(135deg, hsl(251 89% 61% / 0.4), hsl(198 100% 44% / 0.4));
 
     /* Shadows */
-    --shadow-glow: 0 0 40px hsl(200 100% 60% / 0.35);
-    --shadow-glow-strong: 0 0 60px hsl(200 100% 60% / 0.5), 0 0 100px hsl(265 85% 65% / 0.25);
-    --shadow-card: 0 8px 32px hsl(230 50% 2% / 0.5);
+    --shadow-glow: 0 10px 40px hsl(251 89% 61% / 0.25);
+    --shadow-glow-strong: 0 10px 60px hsl(251 89% 61% / 0.35), 0 0 100px hsl(198 100% 44% / 0.2);
+    --shadow-card: 0 8px 32px hsl(245 30% 60% / 0.12);
 
     /* Transitions */
     --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
@@ -72,20 +75,20 @@
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "ss01", "cv11";
     background-image:
-      radial-gradient(ellipse 80% 60% at 50% -10%, hsl(200 100% 60% / 0.12), transparent),
-      radial-gradient(ellipse 60% 50% at 100% 30%, hsl(265 85% 65% / 0.08), transparent),
-      radial-gradient(ellipse 60% 50% at 0% 60%, hsl(180 100% 55% / 0.06), transparent);
+      radial-gradient(ellipse 80% 60% at 50% -10%, hsl(251 89% 61% / 0.10), transparent),
+      radial-gradient(ellipse 60% 50% at 100% 30%, hsl(198 100% 44% / 0.08), transparent),
+      radial-gradient(ellipse 60% 50% at 0% 60%, hsl(24 100% 34% / 0.05), transparent);
     background-attachment: fixed;
   }
 }
 
 @layer components {
   .glass {
-    @apply bg-card/40 backdrop-blur-xl border border-white/5;
+    @apply bg-card/70 backdrop-blur-xl border border-border/60;
     box-shadow: var(--shadow-card);
   }
   .glass-strong {
-    @apply bg-card/60 backdrop-blur-2xl border border-white/10;
+    @apply bg-card/90 backdrop-blur-2xl border border-border;
     box-shadow: var(--shadow-card);
   }
   .text-gradient {
