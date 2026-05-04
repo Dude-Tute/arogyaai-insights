@@ -91,26 +91,6 @@ export const Hero = () => {
               real-time disease risk predictions with explainable AI insights.
             </p>
             <div
-              className="mt-8 flex flex-col sm:flex-row gap-3 animate-fade-up"
-              style={{ animationDelay: "240ms" }}
-            >
-              <a
-                href="/start"
-                className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-gradient-primary text-primary-foreground font-medium glow-primary hover:glow-strong transition-all"
-              >
-                Start Analysis
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </a>
-              <a
-                href="/login"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full glass-strong font-medium hover:bg-card/80 transition-colors border border-secondary/40 text-secondary"
-              >
-                <PlayCircle className="w-4 h-4" />
-                Login
-              </a>
-            </div>
-
-            <div
               className="mt-10 flex items-center gap-6 text-xs text-muted-foreground animate-fade-up"
               style={{ animationDelay: "360ms" }}
             >
