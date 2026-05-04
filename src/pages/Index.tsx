@@ -1,16 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Navbar } from "@/components/landing/Navbar";
+import { Hero } from "@/components/landing/Hero";
+import { CoreValue } from "@/components/landing/CoreValue";
+import { HowItWorks } from "@/components/landing/HowItWorks";
+import { DashboardPreview } from "@/components/landing/DashboardPreview";
+import { AIExplain } from "@/components/landing/AIExplain";
+import { Trust } from "@/components/landing/Trust";
+import { Architecture } from "@/components/landing/Architecture";
+import { FeaturesGrid } from "@/components/landing/FeaturesGrid";
+import { Research } from "@/components/landing/Research";
+import { FinalCTA } from "@/components/landing/FinalCTA";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <main className="min-h-screen relative overflow-x-hidden">
+      <Navbar />
+      <Hero />
+      <CoreValue />
+      <HowItWorks />
+      <DashboardPreview />
+      <AIExplain />
+      <Trust />
+      <Architecture />
+      <FeaturesGrid />
+      <Research />
+      <FinalCTA />
+    </main>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
